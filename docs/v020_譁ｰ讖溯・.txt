@@ -1,0 +1,22 @@
+MOB MASTER MANAGER v0.2.0 新機能
+
+1. ORGANIZE / FIGURE ORDER
+ドラッグで表示順だけを変更。masterId・ゲーム側Source IDは固定。複数選択してレアリティ、画像フォルダ、ゲーム使用有無、タグを一括編集可能。
+
+2. ORGANIZE / TAG DESIGN
+カテゴリ順（カラー→シリーズ→タイプ→エリア→その他）に整理可能。必要なら表示順どおり01から新番号を再採番。現在IDは変更しない。
+
+3. DIFF
+初期状態または別のMOB MASTER BACKUP JSONと比較。FIGURES / TAGS / STORY ENEMIES / MOB MONSTERS を NEW / CHANGED / REMOVED / SAME で表示。
+
+4. SAFETY CHECK
+重複タグ番号、表示順重複、ゲームSource ID重複、参照切れ、空画像等をチェック。ERRORが1件でもある場合、STORY/PIECE/MONSTERS/TAG REMAPのEXPORTを停止。
+
+5. HISTORY / UNDO
+変更履歴を最大120件記録。UNDOは現在のブラウザセッションで直近6回。
+
+6. MONSTERS COMPARE
+同じキャラクターのSTORY遭遇データとMOB MONSTERS育成データを横並び表示。ただし値は同期しない。
+
+7. SOUL RECORD
+基本情報とマイルストーンをフォーム編集。Advanced JSONも保持。

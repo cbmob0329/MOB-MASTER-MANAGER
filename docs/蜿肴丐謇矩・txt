@@ -1,0 +1,15 @@
+MOB MASTER MANAGER v0.3.0 安全な反映手順
+
+1. ゲーム本体3本をGitでコミットしてから作業する。
+2. SYNC CENTERで最新版ZIPをスキャンする。
+   ※SCAN ONLY。MASTERにもゲーム本体にも自動反映しない。
+3. FIGURES / TAGS / MONSTERS / SOUL-SKILLを編集する。
+4. 大きな並び替えはORGANIZE > SIMULATORで先に結果を見る。
+5. CHECKでERROR 0を確認する。
+6. REFLECTの「反映予定」でNEW / CHANGED / REMOVED / TAG REMAPを確認する。
+7. STORY / PIECE / MONSTERSそれぞれ専用JSONを書き出す。
+8. ゲーム側へ反映する前にTAG REMAPとDIFFを確認する。
+9. STORYとMONSTERSの技・ステータス・耐性・パッシブを相互コピーしない。
+10. 反映後、図鑑・装備・ガチャ・戦闘・セーブ読込をテストする。
+
+管理アプリ自体にはゲーム本体への直接書込機能はありません。

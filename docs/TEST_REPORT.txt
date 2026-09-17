@@ -1,0 +1,26 @@
+MOB MASTER MANAGER v0.3.0 TEST REPORT
+
+実施済み
+1. JavaScript構文: node --check OK
+2. 主要描画関数VM実行: HOME / SYNC / FIGURES / ORGANIZE / TAGS / MONSTERS / SOUL / DIFF / CHECK / REFLECT OK
+3. ORGANIZE SIMULATOR描画: OK
+4. SKILL MASTER構造化編集画面描画: OK
+5. v0.2 -> v0.3 localStorage移行: OK（編集済み名称を保持）
+6. 初期SAFETY CHECK: ERROR 0
+7. 初期DIFF: FIGURES 294 / TAGS 63 / STORY ENEMIES 227 / MOB MONSTERS 213 すべてSAME
+8. 画像台帳生成: FIGURES 294、初期重複画像パス 0、6フォルダ認識
+9. ZIP SCAN実データ試験: MOB GAME.zip 377 filesを解析
+   - MOB STORY: 認識
+   - MOB PIECE BATTLE: 認識
+   - MOB MONSTERS: 認識
+   - PIECE figures master: 265
+   - PIECE tags master: 52
+10. ZIP SCANはMASTERを書き換えないことをコード経路で確認
+11. REFLECTはDIRECT WRITE OFF。JSON生成のみ。
+
+安全仕様
+- MASTER ID / STORY Source ID / PIECE Source IDは並び替えシミュレーションで変更しない。
+- STORYとMOB MONSTERSのモンスター・技性能は別管理。
+- CHECKにERRORがある場合、ゲーム別EXPORTを停止。
+- 編集ごとにAUTO復元ポイントを1世代保存。
+- MANUAL復元ポイントはAUTOと別に固定保存。

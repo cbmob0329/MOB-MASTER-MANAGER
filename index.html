@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>MOB MASTER MANAGER</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">M</span><div><b>MOB MASTER</b><small>STORY / PIECE BATTLE / MONSTERS · v0.3.0</small></div></div>
+    <div class="top-actions">
+      <span class="safe-badge" title="このアプリからゲーム本体へ直接書き込みません">SAFE MODE</span>
+      <button class="ghost" id="undoBtn" disabled>UNDO</button>
+      <button class="ghost" id="historyBtn">HISTORY</button>
+      <button class="ghost" id="snapshotBtn">RESTORE POINT</button>
+      <button class="ghost" id="backupBtn">BACKUP</button>
+      <button class="ghost" id="settingsBtn">設定</button>
+    </div>
+  </header>
+  <nav class="mainnav" id="mainnav">
+    <button data-view="dashboard" class="active">HOME</button>
+    <button data-view="sync">SYNC</button>
+    <button data-view="figures">FIGURES</button>
+    <button data-view="organize">ORGANIZE</button>
+    <button data-view="tags">TAGS</button>
+    <button data-view="monsters">MONSTERS</button>
+    <button data-view="soul">SOUL / SKILL</button>
+    <button data-view="diff">DIFF</button>
+    <button data-view="audit">CHECK</button>
+    <button data-view="export">REFLECT</button>
+  </nav>
+  <main id="view"></main>
+</div>
+<input type="file" id="importBackupFile" accept="application/json" hidden>
+<input type="file" id="compareBackupFile" accept="application/json" hidden>
+<input type="file" id="zipImportFiles" accept=".zip,application/zip" multiple hidden>
+<div id="toast" class="toast"></div>
+<div id="modal" class="modal" hidden><div class="modal-card" id="modalCard"></div></div>
+<script src="data/master-data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

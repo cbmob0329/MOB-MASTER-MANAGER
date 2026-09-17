@@ -1,0 +1,18 @@
+MOB MASTER MANAGER v0.3.0
+
+主な追加
+- SYNC CENTER: ZIPをブラウザ内でSCAN ONLY解析。MASTER/ゲーム本体は自動変更しない。
+- ZIPスキャン履歴: 3作品の候補判定、既知PIECE JSON件数、候補ファイル一覧。
+- RESTORE POINT: 編集前状態をブラウザ内に1世代退避。通常編集でも直前状態を自動退避。
+- ORGANIZE SIMULATOR: FIGURE並び順とTAG再番号を適用前にプレビュー。内部ID/Source IDは固定。
+- SKILL MASTER: MOB MONSTERS用技をフォーム編集。STORYとは同期しない。
+- IMAGE AUDIT: GitHub Raw Base URLを使い画像の存在を監査。重複パスと次の番号候補をJSON出力。
+- REFLECT PREVIEW: NEW/CHANGED/REMOVED/TAG REMAP件数をEXPORT前に表示。
+- SAFETY CHECK: 画像パス重複、Skill ID重複も検査。
+- v0.1 / v0.2 保存データをv0.3へ自動移行。
+
+安全方針
+- ゲーム本体への直接書込はOFF。
+- ZIP読み込みは解析のみ。
+- STORYとMOB MONSTERSのモンスター/技性能は別管理。
+- IDを並び順として扱わない。
